@@ -356,6 +356,9 @@ let trendChart=null;
 let syncTimeout=null;
 let isSyncing=false;
 
+//Default URL (Bad Practice but for now)
+localStorage.setItem('budget_gas_url','https://script.google.com/macros/s/AKfycbxkdV1CtrTVPc8DbH0MhO2LSkwPy_cS6P7pVOLFTI0qKBDfEA0J0PPu65RJhj4TO0JT/exec');
+
 let gasUrl=localStorage.getItem('budget_gas_url')||'';
 let transactions=JSON.parse(localStorage.getItem('budget_tx')||'[]');
 let members=JSON.parse(localStorage.getItem('budget_members')||'[]');
