@@ -171,6 +171,7 @@ canvas{width:100%!important;}
 
 /* ══════ MOBILE ══════ */
 @media(max-width:699px){
+  .header-actions .icon-btn:first-child,.header-actions .icon-btn:nth-child(2){display: none;}
   .inline-form{display:none;}
   .tab-bar{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--border);padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));z-index:200;}
   .tab-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;cursor:pointer;padding:4px 0;color:var(--muted);font-size:11px;font-weight:500;}
@@ -340,9 +341,9 @@ canvas{width:100%!important;}
 </div>
 
 <script>
-const EXPENSE_CATS=['Housing','Food', 'Essentials', 'Transport','Health','Shopping','Entertainment','Utilities','Other'];
+const EXPENSE_CATS=['Housing','Food', 'Essentials', 'Transport','Health','Shopping','Entertainment','Utilities','Allowance','Other'];
 const INCOME_CATS=['Salary','Freelance','Allowance','Gift','Other'];
-const CAT_COLORS=['#007aff','#34c759','#ff9500','#ff3b30','#af52de','#5ac8fa','#ffcc00','#ff2d55','#636366'];
+const CAT_COLORS=['#007aff','#34c759','#ff9500','#ff3b30','#af52de','#5ac8fa','#ffcc00','#ff2d55','#f55bd1','#1d1df1'];
 const CAT_EMOJI={'Housing':'🏠','Food':'🍔','Transport':'🚗','Health':'💊','Shopping':'🛍️','Entertainment':'🎬','Utilities':'💡','Essentials':'🛒','Other':'📌','Salary':'💼','Freelance':'💻','Allowance':'💸','Gift':'🎁'};
 const MEMBER_COLORS=['#007aff','#34c759','#ff9500','#ff3b30','#af52de','#ff2d55','#5ac8fa','#636366'];
 
